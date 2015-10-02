@@ -8,3 +8,6 @@ _public class HelloWorld extends StringtoNumber_
 3. Call the StringtoNumber.containsNum() function and save it in a variable or use it directly in the if statement.
 eg: _String theReturn = StringtoNumber.containsNum(userInput)_
 4. If the program returns 0 (ZERO) it contains letters else the program contains only numbers
+
+## Example
+An example is in this repository. Here is one file: myTestClass.java and the other: ReadyToProgram.java
