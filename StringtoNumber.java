@@ -24,9 +24,8 @@ Here is the logic break up:
 public class StringtoNumber {
     
     
-    // Java method string type. It checks if a string contains letters anywhere,
-    // it will return false value or "0" in a string and if it contains only numbers
-    // it will send "1" as return.
+    // Java method string type. It checks if a string contains letters and no numbers
+    // then re
     public static String containsNum(String userInput) {
         
     
@@ -45,6 +44,7 @@ public class StringtoNumber {
             if ((j < 48) || (j > 57)) { 
                 // If it contains a letter add one to the variable
                 hasLetter = true;
+                break;
                         
             } 
             
