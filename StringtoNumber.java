@@ -24,30 +24,29 @@ Here is the logic break up:
 public class StringtoNumber {
     
     
-    // Java method string type. It checks if a string contains letters and no numbers
-    // then re
+    // Java method string type. It checks if a string contains letters anywhere,
+    // it will return false value or "0" in a string and if it contains only numbers
+    // it will send "1" as return.
     public static String containsNum(String userInput) {
         
     
         // Lets keep a track if they entered a number or not
         boolean hasLetter = false;
 
-        //while (true){
-            // For loop looping through userInput string.
-            for (int x = 0; x < userInput.length(); x++) {
+        // For loop looping through userInput string.
+        for (int x = 0; x < userInput.length(); x++) {
                 
-                // Get the first letter and save it in a char variable
-                char a = userInput.charAt(x);
-                // Convert the char into its ascii value
-                int j = (int) a;
-                // If the character doesnt have a ascii value of 0-9 it is a
-                // a letter or something else eg symbol
-                if ((j < 48) || (j > 57)) { 
-                    // If it contains a letter add one to the variable
-                    hasLetter = true;
+            // Get the first letter and save it in a char variable
+            char a = userInput.charAt(x);
+            // Convert the char into its ascii value
+            int j = (int) a;
+            // If the character doesnt have a ascii value of 0-9 it is a
+            // a letter or something else eg symbol
+            if ((j < 48) || (j > 57)) { 
+                // If it contains a letter add one to the variable
+                hasLetter = true;
                         
-                } 
-            //}
+            } 
             
             // Contains a letter?
             if (hasLetter) {
