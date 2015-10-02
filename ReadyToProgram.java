@@ -13,7 +13,7 @@ public class ReadyToProgram extends StringtoNumber {
         while (true) {
             c.println("Please enter a number:");
              String theInput = c.readLine();
-             String a = containsNum(theInput);
+             String a = StringtoNumber.containsNum(theInput);
              if (theInput == "exit") {
                  break;
              }
