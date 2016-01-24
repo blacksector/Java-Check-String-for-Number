@@ -9,21 +9,24 @@ public class strToInt {
         boolean hasNumber = false;
         boolean hasDecimal = false;
         
+        // Trim the string first for testing:
+        input = input.trim();
+        
         // Lets loop through all the characters in the string!
         for (int x = 0; x < input.length(); x++) {
         
             // Get that specific character we need save it into "a" variable
             char a = input.charAt(x);
+            
             // Save it into an int variable by type casting it. This will convert it
             // into an ascii value.
-            
             int j = (int) a;
             
             // Check if there is a minus
             if(j == 45) {
                 if (hasMinus) {
                     // This CANNOT be a REAL value as we have tested to have found another
-                    // Plus/Minus symbol in the string.
+                    // Minus symbol in the string.
                     return false;
                 } else {
                     hasMinus = true;
