@@ -23,6 +23,29 @@ public class NumberConverter {
 }
 ```
 
+## Sample Tests:
+">>>" denotes input
+```
+>>> 10
+true
+>>> -10
+true
+>>> +10
+false
+>>> -10.0
+true
+>>> +10.0
+false
+>>> --10
+false
+>>> ++10
+false
+>>> --10.0
+false
+>>> 10.0.0
+false
+```
+
 Good luck! And Enjoy!
 
 If you have any improvements you would like to suggest, just create a pull request or fork it and make your own!
